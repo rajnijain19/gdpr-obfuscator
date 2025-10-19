@@ -36,7 +36,7 @@ pytest test/unit/test_obfuscator.py
 Integration Test (Local) -> Test performance(File up to 1 MB should be processed within 1 minute) using the local file data/Sample_Employees.csv:
 pytest test/integration/test_obfuscator_performance.py
 
-# Running in AWS Environment
+# Running end-to-end test from AWS CLI
 
 1. Configure AWS CLI using following command:
 aws configure
