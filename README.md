@@ -1,13 +1,13 @@
 # GDPR obfuscator (Python)
 
-The purpose of this project is to create an obfuscation tool to process data being ingested to AWS S3 and obfuscate personally identifiable information (PII) fields (like names, emails, phone numbers, address etc) in CSV files. The tool will be supplied with the S3 location of a file containing sensitive information, and the names of the affected fields. It will create a new file or byte stream object containing an exact copy of the input file but with the sensitive data replaced with obfuscated strings. It includes unit tests, integration performance tests, and supports AWS S3 integration for real-environment runs.
+The purpose of this project is to create an obfuscation tool to process data being ingested to AWS S3 and obfuscate personally identifiable information (PII) (like names, emails, phone numbers, address etc) in CSV files. The tool will be supplied with the S3 location of a file containing sensitive information, and the names of the affected fields. It will create a new file or byte stream object containing an exact copy of the input file but with the sensitive data replaced with obfuscated strings. The source code (obfuscator.py and utils.py) can be found in src folder. It test folder includes unit tests (unit/test_obfuscator.py and unit/test_utils.py) and integration performance tests (integration/test_obfuscator_performance.py).
 
 # Setup Instructions
 1. Clone the Repository
-git clone https://github.com/rajnijain19/gdpr-obfuscator
+    git clone https://github.com/rajnijain19/gdpr-obfuscator
 
 2. Change directory to project folder
-cd gdpr-obfuscator
+    cd gdpr-obfuscator
 
 3. Create and Activate Virtual Environment
 python -m venv venv
